@@ -1,0 +1,38 @@
+.documents-item {
+    max-width: 500px;
+    width: 100%;
+
+    @media screen and (max-width: $screen-md-max) {
+      max-width: 100%;
+    }
+
+  &-img {
+    width: 50px;
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 40px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: $c-documents-link;
+    background-color: $c-documents-bg;
+    padding: 30px 48px;
+    border-radius: 30px;
+    transition: background-color 150ms;
+
+    @media screen and (max-width: $screen-sm-max) {
+      padding: 20px 30px;
+      font-size: 13px;
+    }
+
+    &:hover {
+      background-color: $c-documents-bg-hover;
+    }
+  }
+}

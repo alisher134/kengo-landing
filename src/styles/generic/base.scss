@@ -1,0 +1,53 @@
+@media screen and (min-width: $screen-md-max) {
+  html {
+    background-image: $c-primary-gradient, $c-secondary-gradient;
+    background-size: 342px 342px, 672px 672px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -170px top -100px, right -500px top -50px
+  }
+
+  html:has(.home) {
+    background-image: $c-primary-gradient;
+    background-size: 342px 342px;
+    background-repeat: no-repeat;
+    background-position: left -170px top -100px
+  }
+}
+    
+body {
+  font-family: $font-family-primary;
+  margin: 0;
+}
+
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 $p-desktop-layout;
+  margin: 0 auto;
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 0 $p-mobile-layout;
+  }
+}
+
+.range {
+  --range-percent: 0%;
+
+  background: linear-gradient(
+    to right,
+    $c-range-active 0%,
+    $c-range-active var(--range-percent),
+    $c-range-inactive var(--range-percent),
+    $c-range-inactive 100%
+  );
+}

@@ -1,0 +1,24 @@
+.news-article-item {
+  &-title {
+    font-weight: 600;
+    font-size: 32px;
+
+    @media (max-width: $screen-sm-max) {
+     font-size: 22px;
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $screen-sm-max) {
+     font-size: 14px;
+    }
+  }
+}

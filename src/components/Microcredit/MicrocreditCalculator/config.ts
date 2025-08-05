@@ -1,0 +1,7 @@
+export const MICRO_CREDIT_DEBOUNCE_TIME = 300;
+
+export const MICRO_CREDIT_DEFAULT = 150000;
+
+export const MICRO_CREDIT_MIN = 15000;
+
+export const MICRO_CREDIT_MAX = 300000;

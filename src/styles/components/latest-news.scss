@@ -1,0 +1,41 @@
+.latest-news {
+  padding-top: 90px;
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: 50px;
+  }
+
+  .news-title {
+    font-size: 50px;
+    font-weight: 600;
+    background: #f2f2f2;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      padding: 7px;
+    }
+  }
+
+  .news-cards {
+    display: flex;
+    gap: 50px;
+    background: $c-news-bg;
+    padding: 70px 60px;
+    border-radius: 40px;
+
+    @media screen and (max-width: $screen-sm-max) {
+      flex-direction: column;
+      padding: 40px;
+      border-radius: 25px;
+    }
+  }
+}

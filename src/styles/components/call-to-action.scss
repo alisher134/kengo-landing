@@ -1,0 +1,128 @@
+.cta {
+    padding-top: 90px;
+
+    @media screen and (max-width: $screen-sm-max) {
+      padding-top: 50px;
+    }
+
+    &-inner {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      padding: 70px 140px;
+      border-radius: 45px;
+
+      &-primary {
+        background: $c-cta-primary-bg url('../assets/images/money-disk.png') no-repeat;
+        background-position: top right -90px;
+        background-size: 50%;
+        border-top-right-radius: 0px;
+
+        @media screen and (max-width: $screen-sm-max) {
+        @include flex-center;
+          background: $c-cta-primary-bg url('../assets/images/money-mob.png') no-repeat;
+          background-size: 100%;
+          padding: 240px 30px 68px;
+          border-radius: 25px;
+          border-top-right-radius: 0px;
+        }
+      }
+
+      &-secondary {
+        position: relative;
+        overflow: visible;
+        background: $c-cta-secondary-bg;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background: url('../assets/images/secondary-desc-money.png') no-repeat;
+          background-size: contain;
+          width: 523px;
+          height: 393px;
+          top: -56px;
+          left: 640px;
+
+          @media screen and (max-width: $screen-md-max) {
+            background: url('../assets/images/secondary-mob-money.png') no-repeat;
+            background-size: contain;
+            width: 423px;
+            height: 493px;
+            top: -146px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          background: $c-white;
+          background-size: contain;
+          width: 229px;
+          height: 229px;
+          top: 49px;
+          left: 830px;
+          border-radius: 100%;
+
+          @media screen and (max-width: $screen-md-max) {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          @include flex-center;
+          margin-top: 150px;
+          background-size: 100%;
+          padding: 240px 30px 68px;
+          border-radius: 25px;
+        }
+      }
+    }
+
+    &-wrap {
+      text-align: center;
+    }
+
+    .cta-phone {
+      font-size: 47px;
+      font-weight: 600;
+      letter-spacing: 1.18px;
+      color: $c-cta-text;
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 28px;
+      }
+    }
+
+    .cta-work-time {
+      font-size: 27px;
+      font-weight: 500;
+      color: $c-cta-text;
+      opacity: 0.5;
+      margin: 0 0 35px 0;
+
+      @media screen and (max-width: $screen-sm-max) {
+        margin: 5px 0 27px 0;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin: 0;
+
+      @media screen and (max-width: $screen-xs-max) {
+        padding: 20px 34px;
+        font-size: 25px;
+      }
+    }
+}

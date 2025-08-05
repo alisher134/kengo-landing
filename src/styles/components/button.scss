@@ -1,0 +1,45 @@
+.button {
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: $c-button-text;
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-primary {
+    background: $c-button-primary-gradient;
+    color: $c-button-text;
+  }
+
+  &-secondary {
+    background: $c-button-secondary-gradient;
+    color: $c-button-text;
+  }
+
+  &-sm {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 18px 52px;
+    border-radius: 100px;
+  }
+
+  &-md {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 27px 48px;
+    border-radius: 100px;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 25px;
+      padding: 25px 23px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 20px;
+      padding: 21px 19px;
+    }
+  }
+}

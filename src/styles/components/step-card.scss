@@ -1,0 +1,65 @@
+.step-card {
+  width: 350px;
+  height: 245px;
+
+  @media screen and (max-width: $screen-sm-max) {
+    text-align: center;
+    flex: 0 1 calc(50% - $p-desktop-layout);
+  }
+
+  .step-card-position {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    color: $c-step-text;
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 29px;
+      font-weight: 500;
+      margin: 0  0 16px 0;
+    }
+  }
+
+  .step-card-title {
+    padding: 14px 24px;
+    background-color: $c-step-bg;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 26px 0;
+    color: $c-step-text;
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      display: inline-block;
+      text-align: center;
+      font-size: 25px;
+      border-radius: 12px;
+      font-weight: 700;
+      padding: 10px;
+    }
+  }
+
+  .step-card-description {
+    font-size: 30px;
+    font-weight: 400;
+    color: $c-step-text;
+    margin: 0;
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 23px;
+      font-weight: 300;
+    }
+  }
+}

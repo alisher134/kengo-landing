@@ -1,0 +1,118 @@
+// Base Colors
+$c-white: #ffffff;
+$c-black: #000000;
+$c-black-transparent-light: rgba($c-black, 0.33);
+$c-dark-gray: rgba($c-black, 0.8);
+$c-overlay-dark: rgba($c-black, 0.7);
+$c-neutral-dark: #191A23;
+
+// Gray
+$c-gray: #d9d9d9;
+$c-gray-medium: #a6a6a6;
+$c-gray-light: #f0f3ff;
+$c-gray-base: #545454;
+$c-gray-muted: rgba($c-gray-base, 0.4);
+
+// Blue
+$c-primary: #546AEE;
+$c-primary-dark: #3D4B9F;
+$c-primary-blue: #5365D1;
+$c-accent-blue: #5468E0;
+$c-blue-light: #C0C9FF;
+$c-blue-cloud: #F1F3FF;
+
+// Yellow
+$c-yellow: #ffbd00;
+$c-yellow-light: #FBD410;
+$c-yellow-primary: #FFC42C;
+$c-yellow-secondary: #E9C873;
+
+// Orange
+$c-orange: #f87c1e;
+$c-orange-start: #FF9A30;
+$c-orange-end: #FF8200;
+$c-orange-base: #F09333;
+$c-dark-orange: rgba($c-orange-base, 0.2);
+
+// Misc
+$c-beige: #fff3e6;
+$c-surface-light: #F6F7FF;
+$c-header-accent: rgb(112, 128, 225);
+
+// Gradients
+$c-primary-gradient: radial-gradient(50% 50% at 50% 50%, rgba($c-header-accent, 0.2) 39%, rgba($c-header-accent, 0) 100%);
+$c-secondary-gradient: radial-gradient(
+  50% 50% at 50% 50%,
+  rgba($c-yellow-primary, 0.2) 39%,
+  rgba($c-yellow-secondary, 0) 100%
+);
+$c-button-primary-gradient: linear-gradient(
+  90deg,
+  $c-orange-start 0%,
+  $c-orange-end 100%
+);
+$c-button-secondary-gradient: linear-gradient(89.99deg, $c-primary-dark -7.42%, $c-accent-blue 99.99%);
+
+//  Header 
+$c-header-bg: $c-white;
+$c-header-nav-text: $c-black;
+$c-header-link-hover: $c-primary-dark;
+$c-header-border: $c-black-transparent-light;
+$c-header-dropdown-bg: $c-white;
+$c-header-submenu-text: $c-dark-gray;
+$c-header-menu-active: $c-primary-dark;
+
+//  Language Switcher 
+$c-lang-text: $c-dark-gray;
+$c-lang-active: $c-primary;
+
+//  Footer 
+$c-footer-text: $c-black;
+$c-footer-nav-text: $c-black;
+$c-footer-legal-text: $c-overlay-dark;
+
+//  Buttons & Icons 
+$c-button-border: $c-neutral-dark;
+$c-button-text: $c-white;
+$c-icon-bg: $c-primary-dark;
+
+//  Range Slider 
+$c-range-active: $c-yellow;
+$c-range-inactive: $c-gray;
+$c-range-label: $c-gray-muted;
+$c-range-handle: $c-orange;
+$c-range-shadow: $c-dark-orange;
+
+//  Promo Block 
+$c-promo-bg: $c-primary-blue;
+$c-promo-border: $c-neutral-dark;
+$c-promo-shadow: $c-neutral-dark;
+$c-promo-text: $c-white;
+$c-promo-link: $c-white;
+$c-promo-icon-bg: $c-blue-light;
+
+//  Steps 
+$c-step-bg: $c-gray-light;
+$c-step-text: $c-black;
+
+//  CTA 
+$c-cta-primary-bg: $c-beige;
+$c-cta-secondary-bg: $c-blue-cloud;
+$c-cta-text: $c-black;
+
+//  News 
+$c-news-bg: $c-neutral-dark;
+$c-news-text: $c-white;
+$c-news-border: $c-white;
+$c-news-link: $c-yellow-light;
+$c-news-icon: $c-yellow-light;
+$c-news-article-link: $c-black;
+
+//  Not Found 
+$c-not-found-title: $c-gray-medium;
+
+//  Documents 
+$c-documents-title: $c-black;
+$c-documents-link: $c-black;
+$c-documents-bg: $c-surface-light;
+$c-documents-bg-hover: $c-beige;
